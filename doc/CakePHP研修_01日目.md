@@ -117,6 +117,12 @@ php composer-setup.php
 php -r "unlink('composer-setup.php');"
 ```
 
+### エディタの準備
+
+開発用のエディタにはMicroSoft製のオープンソースソフトウェア Visual Studio Codeを使用する。
+
+<!-- TODO PHP開発に必要な拡張機能について記載する -->
+
 ## CakePHPのプロジェクトを作成する
 
 <!-- TODO プロジェクト配置場所は指定する -->
