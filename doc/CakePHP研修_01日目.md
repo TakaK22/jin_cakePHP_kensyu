@@ -25,12 +25,26 @@ CakePHPはウェブ開発を単純、簡単に出来る様に開発されたPHP�
 <!--  -->
 <!-- Apache,PHP,MySQLに関してはXAMPPでまとめてインストールすることも検討している -->
 
-### XAMMPのインストール
+### XAMMPを用意する
 
-[XAMMP https://www.apachefriends.org/jp/index.html](https://www.apachefriends.org/jp/index.html) にアクセスしインストーラをダウンロードする
+「XAMPP(ザンプ)」はPHP開発に必要な環境を簡単に構築することができるオープンソースのパッケージです。
+PHP、Webサーバー、DBサーバーといったものがまとめられ、インストールするだけでPHP開発環境を整えることができます。
+
+```
+https://www.apachefriends.org/jp/index.html
+```
 
 ![](./img/CakePHP研修_01日目_XAMPP_download_1.png)
+
+このページから最新のインストーラをダウンロードすることができます。
+
+
+### XAMMPのインストール
+
+今回はWindows版のインストーラ「xampp-windows-x64-8.1.6-0-VS16-installer.exe」をダウンロードします。
 ![](./img/CakePHP研修_01日目_XAMPP_download_2.png)
+
+インストーラを実行します。
 
 nextを押下する
 ![](./img/CakePHP研修_01日目_XAMPP_install_1.png)
@@ -61,17 +75,15 @@ nextを押下
 Finishを押下すると自動的にコントロールパネルが起動する
 ![](./img/CakePHP研修_01日目_XAMPP_install_9.png)
 
-
 ### XAMPPのコントロールパネルについて
 
 インストールが終わるとコントロールパネルが起動します
 
 ![](./img/CakePHP研修_01日目_XAMPP_install_10.png)
 
+<!-- TODO XAMPPコントロールパネルについて軽く説明を入れる -->
 
-<!-- TODO コントロールパネルについて軽く説明を入れる -->
-
-### PHPの初期
+### PHPコマンドの動作確認
 
 XAMPPがインストールできたらPHPのコマンドが実行できるようにします。
 コマンドプロンプトを開いて以下のコマンドを実行してください。
@@ -81,6 +93,56 @@ php -v
 ```
 
 まだPHPのコマンドが認識されていないため、エラーメッセージが表示されます。
+
+#### 環境変数pathを設定する
+
+<!-- TODO pathの設定について詳細を記載 -->
+システム環境変数のpathに`C:\xampp\php`を追加する
+
+<!-- TODO 設定後PHPコマンドが実行できることを確認 -->
+再度phpコマンドを実行しバージョンが表示されることを確認する
+![](./img/CakePHP研修_01日目_php-version.png)
+
+### Composerのインストール
+
+<!-- TODO Composerについてもう少し詳しく書く -->
+Composer(コンポーザー)の準備をします。これは、PHPベースの「パッケージ管理ツール」です。
+以下のサイトで公開されています。
+
+```
+https://getcomposer.org/
+```
+
+<!-- TODO Downloadページに従ってインストールする手順を記載する -->
+コマンドプロンプトから以下のスクリプトを実行します
+
+``` cmd
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php -r "if (hash_file('sha384', 'composer-setup.php') === '55ce33d7678c5a611085589f1f3ddf8b3c52d662cd01d4ba75c0ee0459970c2200a51f492d557530c71c15d8dba01eae') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+php composer-setup.php
+php -r "unlink('composer-setup.php');"
+```
+
+## CakePHPのプロジェクトを作成する
+
+<!-- TODO プロジェクト配置場所は指定する -->
+Composerをインストールしたら任意のコマンドプロンプトを開き、任意のフォルダで以下のコマンド実行します。
+
+<!-- TODO プロジェクト名は後で変えるかもしれない -->
+```
+composer self-update && composer create-project --prefer-dist cakephp/app:"4.*" cake_php_sample
+```
+
+`cake_php_sample`ディレクトリ内にプロジェクトがセットアップされます。
+セットアップが完了したら動作確認をします。
+以下のコマンドをを実行してみましょう
+
+```
+cd cake_php_sample
+bin/cake server
+```
+
+<!-- TODO Windowsで実行時にエラーが出る場合があるので調査して対応する -->
 
 ### エディタ等の設定
 
