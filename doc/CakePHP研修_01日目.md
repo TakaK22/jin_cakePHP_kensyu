@@ -27,7 +27,7 @@ CakePHPはウェブ開発を単純、簡単に出来る様に開発されたPHP�
 
 ### XAMMPのインストール
 
-[XAMMP https://www.apachefriends.org/jp/index.html](https://www.apachefriends.org/jp/index.html)
+[XAMMP https://www.apachefriends.org/jp/index.html](https://www.apachefriends.org/jp/index.html) にアクセスしインストーラをダウンロードする
 
 ![](./img/CakePHP研修_01日目_XAMPP_download_1.png)
 ![](./img/CakePHP研修_01日目_XAMPP_download_2.png)
@@ -60,7 +60,27 @@ nextを押下
 インストール完了  
 Finishを押下すると自動的にコントロールパネルが起動する
 ![](./img/CakePHP研修_01日目_XAMPP_install_9.png)
+
+
+### XAMPPのコントロールパネルについて
+
+インストールが終わるとコントロールパネルが起動します
+
 ![](./img/CakePHP研修_01日目_XAMPP_install_10.png)
+
+
+<!-- TODO コントロールパネルについて軽く説明を入れる -->
+
+### PHPの初期
+
+XAMPPがインストールできたらPHPのコマンドが実行できるようにします。
+コマンドプロンプトを開いて以下のコマンドを実行してください。
+
+```
+php -v
+```
+
+まだPHPのコマンドが認識されていないため、エラーメッセージが表示されます。
 
 ### エディタ等の設定
 
