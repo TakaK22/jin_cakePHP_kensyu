@@ -118,9 +118,10 @@ Composer version 2.4.0 2022-08-16 16:10:48
 
 ### エディタの準備
 
-開発用のエディタにはMicroSoft製のオープンソースソフトウェア Visual Studio Codeを使用する。
+開発用のエディタにはMicroSoft製のオープンソースソフトウェア *Visual Studio Code*を使用する。
 
 <!-- TODO PHP開発に必要な拡張機能について記載する -->
+`VSCodeUserSetup-x64-1.70.0.exe` を実行してください。  
 
 ## CakePHPのプロジェクトを作成する
 
