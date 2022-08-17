@@ -107,14 +107,20 @@ Composer(コンポーザー)の準備をします。これは、PHPベースの�
 https://getcomposer.org/
 ```
 
-<!-- TODO Downloadページに従ってインストールする手順を記載する -->
-コマンドプロンプトから以下のスクリプトを実行します
+ [こちら](https://github.com/composer/windows-setup/releases/) からWindows用のインストーラをダウンロードできます。  
+`Composer-Setup.6.3.0.exe` を実行してください。  
+インストールウィザードに従ってインストールをする。設定はデフォルトのまま  
+インストールが完了したらコマンドプロンプトを新しく起動し、下記コマンドを実行する。
 
 ``` cmd
-php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-php -r "if (hash_file('sha384', 'composer-setup.php') === '55ce33d7678c5a611085589f1f3ddf8b3c52d662cd01d4ba75c0ee0459970c2200a51f492d557530c71c15d8dba01eae') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
-php composer-setup.php
-php -r "unlink('composer-setup.php');"
+composer --version
+```
+
+下記のようにバージョン情報が表示されればOK
+
+``` cmd
+C:\Users\WDAGUtilityAccount>composer --version
+Composer version 2.4.0 2022-08-16 16:10:48
 ```
 
 ### エディタの準備
