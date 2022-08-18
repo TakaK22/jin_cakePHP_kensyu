@@ -132,18 +132,26 @@ power shellを開き、任意のフォルダで以下のコマンド実行しま
 composer self-update && composer create-project --prefer-dist cakephp/app:"4.*" cake_php_sample
 ```
 
-`cake_php_sample`ディレクトリ内にプロジェクトがセットアップされます。
-セットアップが完了したら動作確認をします。
-以下のコマンドをを実行してみましょう
+`cake_php_sample`ディレクトリ内にプロジェクトがセットアップされます。  
+セットアップが完了したら動作確認をします。  
+以下のコマンドを実行してサーバーを起動してみましょう。  
 
-``` powershell
+``` cmd
 cd cake_php_sample
 bin/cake server
 ```
 
+起動ができたらブラウザから <http://localhost:8765> にアクセスしてみましょう。  
+CakePHPのデフォルトページが表示されればプロジェクトは正しく動いています。  
+終了させる時はコマンドプロンプト上で`Ctrl + C`キーを押してサーバーを停止させるか、コマンドプロンプト自体を閉じてください。  
+
+![](./img/CakePHP研修_01日目_show_welcampage.png)
+
+### サーバー起動時にエラーが起きる場合について
+
 サーバー起動時に以下のエラーが出る場合があります。
 
-``` powershell
+``` cmd
 PHP Fatal error:  You must enable the intl extension to use CakePHP. in C:\Users\WDAGUtilityAccount\Desktop\test\cms\config\requirements.php on line 31
 
 Fatal error: You must enable the intl extension to use CakePHP. in C:\Users\WDAGUtilityAccount\Desktop\test\cms\config\requirements.php on line 31
