@@ -173,11 +173,41 @@ PHPの設定を修正する事で対応できます。
 Set Folder Permissions ? (Default to Y) [Y,n]?
 ```
 
-
 ## データベースの準備
 
-### テーブルを作る
+「XAMPP Control Panel」を起動します。  
+赤枠で囲ったStartボタンをそれぞれ押し、ApacheとMySQLを起動します。  
 
-### データの投入
+![](./img/CakePHP研修_01日目_データベース準備1.png)
+
+ApacheとMySQLの文字が緑色になっていれば起動成功です。  
+
+![](./img/CakePHP研修_01日目_データベース準備2.png)
+
+ブラウザを開き <http://localhost/phpmyadmin/index.php> にアクセスします。  
+
+![](./img/CakePHP研修_01日目_データベース準備3.png)
+
+「Shell」ボタンを押してコマンドプロンプトを起動します。  
+
+![](./img/CakePHP研修_01日目_データベース準備4.png)
+
+コマンドプロンプトが起動したら以下のコマンドを実行し、MySQLにログインします。  
+
+```cmd
+mysql -u root
+```
+
+![](./img/CakePHP研修_01日目_データベース準備5.png)
+
+`source` と入力してから`create_database.sql` ファイルをドラッグしエンターキーを押します。  
+
+``
+![](./img/CakePHP研修_01日目_データベース準備6.png)
+
+OKが出ればデータベースの作成は成功です。  
+
+<!-- TODO 出力結果が文字化けしてるので設定変更して画像差し替える -->
+![](./img/CakePHP研修_01日目_データベース準備7.png)
 
 ## 社員情報を画面に表示する
