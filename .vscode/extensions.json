@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "yzhang.markdown-all-in-one",
+    "davidanson.vscode-markdownlint",
+    "mushan.vscode-paste-image",
+    "shuworks.vscode-table-formatter",
+    "csholmq.excel-to-markdown-table",
+    "shd101wyy.markdown-preview-enhanced",
+  ]
+}
