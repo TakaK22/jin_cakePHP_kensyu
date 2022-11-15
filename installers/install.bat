@@ -1,6 +1,6 @@
 Git-2.37.2.2-64-bit.exe /VERYSILENT /LOG
 
-VSCodeUserSetup-x64-1.70.0.exe /VERYSILENT /NORESTART /LOG /MERGETASKS=!runcode,addcontextmenufiles,addcontextmenufolders,associatewithfiles,addtopath
+VSCodeUserSetup-x64-1.73.1.exe /VERYSILENT /NORESTART /LOG /MERGETASKS=!runcode,addcontextmenufiles,addcontextmenufolders,associatewithfiles,addtopath
 code --install-extension MS-CEINTL.vscode-language-pack-ja
 code --install-extension eamodio.gitlens
 code --list-extensions
