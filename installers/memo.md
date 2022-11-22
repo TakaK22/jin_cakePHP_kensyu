@@ -1,5 +1,7 @@
 # インストーラ
 
+PHP研修で使用するインストーラの入手場所を記載する
+
 - [Git-2.37.2.2-64-bit.exe](https://github.com/git-for-windows/git/releases/download/v2.37.2.windows.2/Git-2.37.2.2-64-bit.exe)
 - VSCodeUserSetup-x64-1.70.0.exe
 - xampp-windows-x64-8.1.6-0-VS16-installer.exe
